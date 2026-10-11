@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE GAMING CAFE | Thane's Ultimate Console &amp; Sim Racing Lounge</title>
+<!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons for gaming & navigation accents -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pitch: '#08090D',
+              dark: '#0E1017',
+              card: '#141722',
+              cardLight: '#1C2130',
+              lime: '#14F195',
+              greenBright: '#10E891',
+              cyan: '#00F0FF',
+              purple: '#9945FF',
+              magenta: '#D946EF',
+              yellow: '#FFD200',
+              accentRed: '#FF3B5C',
+            }
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'neon-green': '0 0 25px -4px rgba(20, 241, 149, 0.45)',
+            'neon-purple': '0 0 25px -4px rgba(153, 69, 255, 0.45)',
+            'neon-cyan': '0 0 25px -4px rgba(0, 240, 255, 0.45)',
+            'neon-yellow': '0 0 25px -4px rgba(255, 210, 0, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #08090D;
+      color: #E2E8F0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.02em;
+    }
+  </style>
+<style data-purpose="visual-effects">
+    /* Subtle background grid pattern reminiscent of the web3 hackathon feel */
+    .bg-cyber-grid {
+      background-image: radial-gradient(rgba(153, 69, 255, 0.12) 1px, transparent 0);
+      background-size: 32px 32px;
+    }
+    
+    /* Playful gradient text utilities */
+    .gradient-text-summer {
+      background: linear-gradient(135deg, #14F195 0%, #00F0FF 45%, #9945FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gradient-text-yellow-green {
+      background: linear-gradient(135deg, #FFD200 0%, #14F195 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Sticker style decorative badges */
+    .sticker-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Smooth glow transitions */
+    .glow-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glow-hover:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-brand-pitch text-slate-100 antialiased selection:bg-brand-lime selection:text-black">
+<!-- BEGIN: SiteAnnouncementBar -->
+<aside class="bg-gradient-to-r from-brand-purple via-brand-cyan to-brand-lime text-black font-semibold text-xs py-2 px-4 text-center tracking-wide" data-purpose="site-banner">
+<div class="max-w-7xl mx-auto flex items-center justify-center gap-3">
+<span class="bg-black text-white text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">New Spot</span>
+<span>⚡ Thane's First Dedicated PS5, PS4 &amp; Force-Feedback Sim Cockpit Lounge in Yeoor Hills! Starting at just <strong>₹30/controller</strong></span>
+<a class="underline hover:text-white transition-colors ml-1 font-bold" href="#rates">See Rates →</a>
+</div>
+</aside>
+<!-- END: SiteAnnouncementBar -->
+<!-- BEGIN: NavigationHeader -->
+<header class="sticky top-0 z-50 backdrop-blur-xl bg-brand-pitch/85 border-b border-white/10 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo Branding -->
+<a aria-label="The Gaming Cafe Home" class="flex items-center gap-3 group" href="#">
+<div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-lime via-brand-cyan to-brand-purple p-[2px] transition-transform group-hover:rotate-6">
+<div class="w-full h-full bg-brand-dark rounded-[14px] flex items-center justify-center text-brand-lime">
+<i class="fa-solid fa-gamepad text-xl"></i>
+</div>
+</div>
+<div>
+<span class="font-heading font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
+            THE GAMING <span class="text-brand-lime">CAFE</span>
+</span>
+<span class="block text-[10px] text-zinc-400 font-medium tracking-widest uppercase">Yeoor Hills • Center</span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-zinc-300">
+<a class="hover:text-brand-lime transition-colors" href="#about">About Us</a>
+<a class="hover:text-brand-lime transition-colors" href="#rates">Rates</a>
+<a class="hover:text-brand-cyan transition-colors flex items-center gap-1.5" href="#steering-wheel">
+<span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+          Steering Wheel
+        </a>
+<a class="hover:text-brand-lime transition-colors" href="#games">Games</a>
+<a class="hover:text-brand-lime transition-colors" href="#rules">Rules &amp; Notes</a>
+<a class="hover:text-brand-lime transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-brand-lime transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- Action Call to Action -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-full bg-white/5 border border-white/15 text-zinc-200 hover:border-brand-lime hover:text-brand-lime transition-all" href="https://wa.me/918976428943?text=Hi%20The%20Gaming%20Cafe,%20I%20would%20like%20to%20book%20a%20gaming%20slot!" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp text-brand-lime text-sm"></i>
+<span>8976428943</span>
+</a>
+<a class="relative group px-5 py-2.5 rounded-full font-heading font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-brand-lime via-brand-cyan to-brand-purple text-black shadow-neon-green hover:brightness-110 active:scale-95 transition-all" href="#booking">
+<span>Book Your Slot</span>
+</a>
+</div>
+</div>
+</header>
+<!-- END: NavigationHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-12 pb-24 md:pt-16 md:pb-32 bg-cyber-grid overflow-hidden border-b border-white/10" data-purpose="hero-banner">
+<!-- Ambient Background Glows -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-96 h-96 bg-brand-lime/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-72 bg-brand-cyan/15 rounded-full blur-[160px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- Solana Summer Camp inspired Eyebrow Status Pill -->
+<div class="flex justify-center mb-6">
+<div class="sticker-badge bg-brand-card/90 px-4 py-2 rounded-full border border-brand-lime/30 text-xs font-semibold text-zinc-200">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-lime opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-lime"></span>
+</span>
+<span class="tracking-wide uppercase text-white font-bold">Launching in Yeoor Hills</span>
+<span class="text-zinc-500">•</span>
+<span class="text-brand-yellow font-bold">From ₹30 / Controller</span>
+</div>
+</div>
+<!-- Main Headline -->
+<div class="text-center max-w-4xl mx-auto">
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6">
+            Your One-Stop <br class="hidden sm:inline"/>
+<span class="gradient-text-summer">Video Game Center</span> &amp; Lounge
+          </h1>
+<p class="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
+            Play higher-graphic Triple-A titles, nostalgic classics, and high-octane steering wheel racing rigs in Thane's dedicated gaming haven. Built for casual squad hangouts and competitive showdowns.
+          </p>
+<!-- Dual CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+<a class="px-8 py-4 rounded-full font-heading font-extrabold text-sm sm:text-base text-black bg-gradient-to-r from-brand-lime via-brand-cyan to-brand-purple shadow-neon-green hover:shadow-neon-cyan transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3" href="#booking">
+<span>Book Now</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="px-7 py-4 rounded-full font-heading font-bold text-sm sm:text-base text-white bg-brand-card hover:bg-brand-cardLight border border-white/20 hover:border-brand-lime transition-all flex items-center gap-2.5" href="https://wa.me/918976428943?text=Hi%20The%20Gaming%20Cafe,%20I%20have%20an%20enquiry!" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp text-brand-lime text-lg"></i>
+<span>Contact Us / WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Key Visual Artwork Frame (Using Provided DATA:IMAGE:IMAGE_12) -->
+<div class="relative max-w-5xl mx-auto rounded-3xl p-2 sm:p-3 bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-2xl">
+<div class="relative rounded-2xl overflow-hidden bg-brand-pitch border border-white/10 group">
+<img alt="Vibrant colorful vector art illustration in Solana Summer Camp style on dark black background. Modern cartoon-style gamers playing PS5 and PS4 console games on glowing futuristic sofa with dualsense controllers and racing steering wheel setup." class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.01]" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSWUPM_Tr86l8HtMsfAZyufluMpMzcQCzcd3Xu15afrzH0ynPgld2lhfSypW_Z0FzwGbHwAiQ-OEkCebzs0HXTw5LX5xdVyzTerK8wt6WuGEY9J94Tdf34d8luzcX3kNjb6-ABHoN1JpB70IPw3_AECg-K068iBg6bKOI6YAklYx5eJ5GeBcfrkNYp1IO1b1wIsLNzn86ZLCoxEphe5VlQ8bfMse6f6jYNDnVvj9i6TeJY1nUWZcYL"/>
+<!-- Floating Solana Summer Camp Style Stickers / Badges -->
+<div class="absolute top-4 left-4 sm:top-6 sm:left-6 sticker-badge bg-black/80 border-brand-purple/50 px-3 sm:px-4 py-2 rounded-2xl">
+<span class="w-3 h-3 rounded-full bg-brand-purple inline-block"></span>
+<span class="font-heading font-bold text-xs sm:text-sm text-white">PS5 &amp; PS4 Ready</span>
+</div>
+<div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 sticker-badge bg-black/80 border-brand-cyan/50 px-3 sm:px-4 py-2 rounded-2xl">
+<i class="fa-solid fa-gauge-high text-brand-cyan text-sm"></i>
+<span class="font-heading font-bold text-xs sm:text-sm text-white">Sim Racing Wheel Available</span>
+</div>
+<div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 sticker-badge bg-brand-yellow px-3 sm:px-4 py-2 rounded-2xl text-black">
+<i class="fa-solid fa-bolt text-black text-sm"></i>
+<span class="font-heading font-black text-xs sm:text-sm uppercase tracking-wide">Starting ₹30 / Cont.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: QuickStatsStrip -->
+<section class="py-8 bg-brand-card/40 border-b border-white/5" data-purpose="social-proof-strip">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="p-4 border-r border-white/5 last:border-none">
+<p class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-lime">4K HDR</p>
+<p class="text-xs uppercase tracking-wider text-zinc-400 mt-1">High-Graphic Consoles</p>
+</div>
+<div class="p-4 border-r border-white/5 last:border-none">
+<p class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-cyan">30+ Titles</p>
+<p class="text-xs uppercase tracking-wider text-zinc-400 mt-1">Monthly Updated Library</p>
+</div>
+<div class="p-4 border-r border-white/5 last:border-none">
+<p class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-yellow">₹50 Flat</p>
+<p class="text-xs uppercase tracking-wider text-zinc-400 mt-1">Steering Wheel Special</p>
+</div>
+<div class="p-4">
+<p class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-purple">1 to 4 Players</p>
+<p class="text-xs uppercase tracking-wider text-zinc-400 mt-1">Co-op &amp; Split Screen Fun</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuickStatsStrip -->
+<!-- BEGIN: AboutSection -->
+<section class="py-20 md:py-28 relative" data-purpose="about-cafe" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-purple/20 border border-brand-purple/40 text-brand-purple text-xs font-bold uppercase tracking-wider">
+<i class="fa-solid fa-gamepad"></i>
+<span>Play at The Gaming Centre</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+              Thane's Fresh Hub For Real <span class="text-brand-lime">Gamers &amp; Friends</span>
+</h2>
+<p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+              We are launching the first gaming cafe in Yeoor Hills at an accessible price. You can play higher-graphic triple-A titles, nostalgic classics, and high-octane steering wheel racing games. Come visit and explore our gaming cafe for an excellent gameplay experience.
+            </p>
+<!-- Feature Bullet Cards -->
+<div class="grid sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-2xl bg-brand-card border border-white/5 glow-hover">
+<div class="w-9 h-9 rounded-xl bg-brand-lime/10 text-brand-lime flex items-center justify-center mb-3">
+<i class="fa-solid fa-tv text-base"></i>
+</div>
+<h4 class="font-heading font-bold text-white text-base">Triple-A Visuals</h4>
+<p class="text-zinc-400 text-xs mt-1">Immerse yourself in fluid 60FPS to 120FPS PlayStation fidelity on crystal display setups.</p>
+</div>
+<div class="p-4 rounded-2xl bg-brand-card border border-white/5 glow-hover">
+<div class="w-9 h-9 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center mb-3">
+<i class="fa-solid fa-car-side text-base"></i>
+</div>
+<h4 class="font-heading font-bold text-white text-base">Force Feedback Sim</h4>
+<p class="text-zinc-400 text-xs mt-1">Pedal to the metal with dedicated racing wheels, realistic physics, and true simulation controls.</p>
+</div>
+<div class="p-4 rounded-2xl bg-brand-card border border-white/5 glow-hover">
+<div class="w-9 h-9 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center mb-3">
+<i class="fa-solid fa-people-group text-base"></i>
+</div>
+<h4 class="font-heading font-bold text-white text-base">Couch Multiplayer</h4>
+<p class="text-zinc-400 text-xs mt-1">Bring your entire squad for 1v1, 2v2, or 4-player split-screen madness in FIFA, WWE, and Mortal Kombat.</p>
+</div>
+<div class="p-4 rounded-2xl bg-brand-card border border-white/5 glow-hover">
+<div class="w-9 h-9 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center mb-3">
+<i class="fa-solid fa-wallet text-base"></i>
+</div>
+<h4 class="font-heading font-bold text-white text-base">Pocket Friendly</h4>
+<p class="text-zinc-400 text-xs mt-1">Transparent hourly pricing starting from ₹30. Premium gaming should be accessible to all students and enthusiasts.</p>
+</div>
+</div>
+</div>
+<!-- Feature Spotlight Side Banner -->
+<div class="lg:col-span-6">
+<div class="relative bg-gradient-to-tr from-brand-card to-brand-cardLight border border-white/10 rounded-3xl p-8 overflow-hidden shadow-2xl">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-brand-lime/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-6 border-b border-white/10">
+<div class="flex items-center gap-3">
+<span class="w-3.5 h-3.5 rounded-full bg-red-500"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-yellow-500"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-green-500"></span>
+</div>
+<span class="text-xs font-mono text-zinc-400 tracking-wider">SYSTEM_SPECS // READY</span>
+</div>
+<div class="space-y-6 pt-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex-shrink-0 flex items-center justify-center text-brand-lime font-bold text-xl">
+                    01
+                  </div>
+<div>
+<h5 class="font-heading font-bold text-white text-lg">Next-Gen PS5 &amp; PS4 Stations</h5>
+<p class="text-zinc-400 text-sm mt-0.5">DualSense haptic controllers, quick SSD loading, and instant library access without disc swaps.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex-shrink-0 flex items-center justify-center text-brand-cyan font-bold text-xl">
+                    02
+                  </div>
+<div>
+<h5 class="font-heading font-bold text-white text-lg">Dedicated Sim Cockpit Rig</h5>
+<p class="text-zinc-400 text-sm mt-0.5">Custom pedals, steering setup with force response for F1 22, Snow Runner, and Dirt 5.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex-shrink-0 flex items-center justify-center text-brand-yellow font-bold text-xl">
+                    03
+                  </div>
+<div>
+<h5 class="font-heading font-bold text-white text-lg">Hassle-Free Reservations</h5>
+<p class="text-zinc-400 text-sm mt-0.5">Pre-book through WhatsApp or direct call to guarantee your screen and controllers upon arrival.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+<div>
+<p class="text-xs text-zinc-400">Location Area</p>
+<p class="font-bold text-white text-sm">Yeoor Hills, Pokharan Rd No. 1, Thane</p>
+</div>
+<a class="px-4 py-2 rounded-xl text-xs font-bold uppercase bg-white/10 hover:bg-white/20 text-white transition-colors" href="#contact">
+                  Find On Map
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: RatesSection -->
+<section class="py-20 md:py-28 bg-brand-dark/60 relative border-t border-b border-white/10" data-purpose="pricing-tables" id="rates">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-bold uppercase tracking-wider mb-3">
+<i class="fa-solid fa-tags"></i>
+<span>Accessible Gameplay Rates</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white">PS4 &amp; PS5 Console Rates</h2>
+<p class="text-zinc-400 text-sm sm:text-base mt-3">Fair, transparent pricing calibrated per controller so you only pay for what you play.</p>
+<!-- Mandatory Original Note from Screenshots -->
+<div class="mt-6 inline-block bg-brand-purple/20 border border-brand-purple/50 rounded-2xl px-5 py-3 text-xs sm:text-sm font-semibold text-brand-magenta">
+<i class="fa-solid fa-circle-info mr-2 text-brand-purple"></i>
+<strong>NOTE:</strong> SAME RATES FOR THREE CONTROLLER AS PER GIVEN FOR TWO CONTROLLER
+          </div>
+</div>
+<!-- 3-Column Pricing Comparison Cards -->
+<div class="grid md:grid-cols-3 gap-8 items-stretch">
+<!-- Card 1: Single Player -->
+<div class="bg-brand-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between glow-hover relative">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-zinc-400">Single Player</span>
+<span class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cyan text-sm">
+<i class="fa-solid fa-user"></i>
+</span>
+</div>
+<h3 class="font-heading text-2xl font-black text-white">1 Controller</h3>
+<p class="text-zinc-400 text-xs mt-1 mb-6">Solo campaign, story mode or online matchmaking</p>
+<!-- Price List -->
+<div class="space-y-3 font-medium text-sm">
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">30 MIN</span>
+<span class="font-bold text-white text-base">40 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">1 HOUR</span>
+<span class="font-bold text-white text-base">80 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<!-- Recommended Row -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-brand-lime/10 border border-brand-lime/40 relative">
+<div class="flex flex-col">
+<span class="text-white font-bold">1 HR 30 MIN</span>
+<span class="text-[10px] text-brand-lime font-extrabold uppercase tracking-wider">Recommended Value</span>
+</div>
+<span class="font-extrabold text-brand-lime text-lg">100 Rs <span class="text-xs text-zinc-300 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">2 HOUR</span>
+<span class="font-bold text-white text-base">140 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-white/5">
+<a class="block w-full py-3 text-center rounded-xl font-heading font-bold text-xs uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white transition-colors" href="#booking">
+                Reserve 1 Player Setup
+              </a>
+</div>
+</div>
+<!-- Card 2: Two Players (FEATURED) -->
+<div class="bg-gradient-to-b from-brand-card to-brand-cardLight rounded-3xl p-6 sm:p-8 border-2 border-brand-lime shadow-neon-green flex flex-col justify-between glow-hover relative">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-lime text-black font-heading font-black text-xs uppercase tracking-wider px-4 py-1 rounded-full shadow-lg">
+              Most Popular Choice
+            </div>
+<div>
+<div class="flex items-center justify-between mb-4 mt-2">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-lime">Duo / Squad</span>
+<span class="w-8 h-8 rounded-full bg-brand-lime/20 flex items-center justify-center text-brand-lime text-sm">
+<i class="fa-solid fa-user-group"></i>
+</span>
+</div>
+<h3 class="font-heading text-2xl font-black text-white">2 Players</h3>
+<p class="text-zinc-300 text-xs mt-1 mb-6">Split-screen FIFA, Mortal Kombat &amp; WWE battles</p>
+<!-- Price List -->
+<div class="space-y-3 font-medium text-sm">
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/50 border border-white/5">
+<span class="text-zinc-300">30 MIN</span>
+<span class="font-bold text-white text-base">30 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/50 border border-white/5">
+<span class="text-zinc-300">1 HOUR</span>
+<span class="font-bold text-white text-base">60 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<!-- Recommended Row -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-brand-lime/20 border border-brand-lime relative">
+<div class="flex flex-col">
+<span class="text-white font-bold">1 HR 30 MIN</span>
+<span class="text-[10px] text-brand-lime font-black uppercase tracking-wider">★ Best Gamer Value</span>
+</div>
+<span class="font-extrabold text-brand-lime text-xl">80 Rs <span class="text-xs text-zinc-300 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/50 border border-white/5">
+<span class="text-zinc-300">2 HOUR</span>
+<span class="font-bold text-white text-base">110 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-white/10">
+<a class="block w-full py-3.5 text-center rounded-xl font-heading font-extrabold text-xs uppercase tracking-wider bg-brand-lime text-black shadow-neon-green hover:bg-brand-greenBright transition-all" href="#booking">
+                Reserve 2 Players Setup →
+              </a>
+</div>
+</div>
+<!-- Card 3: Four Players -->
+<div class="bg-brand-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between glow-hover relative">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-zinc-400">Full Party</span>
+<span class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-purple text-sm">
+<i class="fa-solid fa-users"></i>
+</span>
+</div>
+<h3 class="font-heading text-2xl font-black text-white">4 Players</h3>
+<p class="text-zinc-400 text-xs mt-1 mb-6">4-Way Rocket League, WWE Royal Rumble &amp; Party games</p>
+<!-- Price List -->
+<div class="space-y-3 font-medium text-sm">
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">30 MIN</span>
+<span class="font-bold text-white text-base">30 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">1 HOUR</span>
+<span class="font-bold text-white text-base">60 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+<!-- Recommended Row -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-brand-purple/20 border border-brand-purple/50 relative">
+<div class="flex flex-col">
+<span class="text-white font-bold">1 HR 30 MIN</span>
+<span class="text-[10px] text-brand-purple font-extrabold uppercase tracking-wider">Recommended Pack</span>
+</div>
+<span class="font-extrabold text-brand-purple text-lg">80 Rs <span class="text-xs text-zinc-300 font-normal">/ Cont.</span></span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-black/40 border border-white/5">
+<span class="text-zinc-300">2 HOUR</span>
+<span class="font-bold text-white text-base">110 Rs <span class="text-xs text-zinc-400 font-normal">/ Cont.</span></span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-white/5">
+<a class="block w-full py-3 text-center rounded-xl font-heading font-bold text-xs uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white transition-colors" href="#booking">
+                Reserve 4 Players Setup
+              </a>
+</div>
+</div>
+</div>
+<!-- Clarification Banner -->
+<div class="mt-10 p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-zinc-400">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-check text-brand-lime"></i>
+<span>No hidden console surcharge. Rates apply uniformly to both PlayStation 4 &amp; PlayStation 5 titles.</span>
+</div>
+<a class="text-brand-lime hover:underline font-semibold" href="#rules">Read Slot Reservation Guidelines →</a>
+</div>
+</div>
+</section>
+<!-- END: RatesSection -->
+<!-- BEGIN: SteeringWheelSection -->
+<section class="py-20 md:py-28 relative overflow-hidden" data-purpose="sim-racing-highlight" id="steering-wheel">
+<!-- Ambient decorative glow -->
+<div class="absolute top-1/2 -left-32 -translate-y-1/2 w-96 h-96 bg-brand-cyan/20 rounded-full blur-[160px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<!-- Image Rig Visual (Using Provided DATA:IMAGE:IMAGE_11) -->
+<div class="lg:col-span-7">
+<div class="relative rounded-3xl p-2.5 bg-gradient-to-tr from-brand-cyan via-brand-purple to-brand-lime/20 shadow-2xl">
+<div class="relative rounded-2xl overflow-hidden bg-brand-pitch border border-white/10 group">
+<img alt="Sleek professional racing cockpit gaming rig with force-feedback steering wheel and pedals, glowing neon cyan and purple ambient light, futuristic supercar telemetry screen in background." class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD01CwHVO5sZWPYnAHJAU6DrFFGlJpk0oaNC5jQVJv2RujgUnTeLfDf_1Rl9aZxbbLfaxLu0BfiXIRlgWOam7n_TDQBsm-TmeX6dJJQJSW_B9Uy7jGeHnMmhbJm9PCrcwnp4g0oEtRatrPdnHjd-8OCvHw9yHuwza4lxPo-EfSNIpqv8VVxZMebFOVk5tN2S-s4SUQRbWrxNkRryJRfmZiv8zDsVmWSPbxl2fDhlzE98ojn2bPn4Nad"/>
+<!-- Overlay Sim Badges -->
+<div class="absolute top-4 left-4 sticker-badge bg-black/85 border-brand-cyan px-3.5 py-1.5 rounded-full text-xs font-bold text-brand-cyan">
+<i class="fa-solid fa-gauge"></i>
+<span>Sim Telemetry &amp; Force Feedback</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-gradient-to-r from-brand-cyan to-brand-purple text-black font-heading font-black text-sm px-4 py-2 rounded-2xl shadow-neon-cyan">
+<span>Pedal + Shifter Rig</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Details -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan text-xs font-bold uppercase tracking-wider">
+<i class="fa-solid fa-flag-checkered"></i>
+<span>High-Octane Cockpit</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+              STEERING WHEELS GAMES <span class="gradient-text-summer">AVAILABLE</span>
+</h2>
+<div class="p-4 rounded-2xl bg-brand-card border border-brand-yellow/40 flex items-center justify-between">
+<div>
+<p class="text-xs uppercase tracking-wider text-zinc-400 font-bold">Unbeatable Sim Rate</p>
+<p class="font-heading text-2xl font-black text-brand-yellow">ONLY FOR 50 Rs</p>
+</div>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-yellow/20 text-brand-yellow text-xs font-extrabold uppercase tracking-wide">
+                Flat Deal
+              </span>
+</div>
+<p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+              Step into our racing cockpit with genuine force-feedback steering, tactile brake and accelerator pedals. From professional Formula 1 tracks to extreme heavy transport simulators, test your driving mastery.
+            </p>
+<!-- Games available for Steering Wheel (Direct from Original Data) -->
+<div>
+<p class="font-heading font-bold text-xs uppercase tracking-widest text-zinc-400 mb-3">
+                Featured Steering Wheel Titles:
+              </p>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-car text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Project Cars 2</span>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-truck-monster text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Snow Runner</span>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-truck-moving text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Truck Logistic Sim</span>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-trophy text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">F1 22</span>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-mountain-sun text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Dirt 5</span>
+</div>
+<div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-truck text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Truck Driver</span>
+</div>
+<div class="col-span-2 flex items-center gap-2.5 p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-brand-cyan/40 transition-colors">
+<i class="fa-solid fa-bus text-brand-cyan text-xs"></i>
+<span class="text-xs font-bold text-white">Bus Simulator 21</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-heading font-extrabold text-xs uppercase tracking-wider bg-brand-cyan text-black hover:bg-cyan-300 shadow-neon-cyan transition-all" href="#booking">
+<span>Book Racing Cockpit</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SteeringWheelSection -->
+<!-- BEGIN: GamesLibrarySection -->
+<section class="py-20 md:py-28 bg-brand-pitch relative border-t border-white/10" data-purpose="games-catalog" id="games">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header with Dynamic Updates Notice -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-bold uppercase tracking-wider mb-3">
+<i class="fa-solid fa-compact-disc"></i>
+<span>Vault of Titles</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white">Curated Game Collection</h2>
+<p class="text-zinc-400 text-sm sm:text-base mt-2">
+              All genres loaded locally for zero delay. Competitive shooters, racing, anime fighters &amp; retro epics.
+            </p>
+</div>
+<div class="sticker-badge bg-brand-card px-4 py-2.5 rounded-2xl border-brand-lime/40">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-lime animate-ping"></span>
+<span class="text-xs font-bold text-zinc-200">
+              Note: <span class="text-brand-lime">Game list will update as per month</span>
+</span>
+</div>
+</div>
+<!-- Three Category Cards Grid -->
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Category 1: PlayStation 5 -->
+<div class="bg-brand-card/90 rounded-3xl p-6 border border-white/10 flex flex-col justify-between glow-hover">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white font-black text-sm">
+                    PS5
+                  </div>
+<div>
+<h3 class="font-heading font-black text-white text-lg">PlayStation 5</h3>
+<p class="text-[11px] text-zinc-400">Triple-A &amp; Next-Gen Power</p>
+</div>
+</div>
+<span class="text-xs font-mono font-bold text-brand-cyan">14 Titles</span>
+</div>
+<!-- List of Games from Original Data -->
+<div class="space-y-2">
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">The Crew 2</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Racing / Open</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">GTA 5 Online</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Action</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">God of War Ragnarök / 5</span>
+<span class="text-[10px] uppercase font-bold text-brand-lime bg-brand-lime/10 px-2 py-0.5 rounded">Hit</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">Call of Duty</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">FPS / Shooter</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">It Takes Two</span>
+<span class="text-[10px] uppercase font-bold text-brand-cyan bg-brand-cyan/10 px-2 py-0.5 rounded">Co-Op Duo</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">A Way Out</span>
+<span class="text-[10px] uppercase font-bold text-brand-cyan bg-brand-cyan/10 px-2 py-0.5 rounded">Co-Op Duo</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">FIFA &amp; WWE 2K24</span>
+<span class="text-[10px] uppercase font-bold text-brand-yellow bg-brand-yellow/10 px-2 py-0.5 rounded">Sports / Versus</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">Raji: An Ancient Epic</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Mythological</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">WRC Generations &amp; Asphalt</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Motorsport</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-cyan/40 transition-colors">
+<span class="text-xs font-semibold text-white">Rocket League, Unravel Two, Jumanji</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Squad</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5 text-center">
+<span class="text-xs text-zinc-400">Playable on DualSense Controllers</span>
+</div>
+</div>
+<!-- Category 2: PlayStation 4 -->
+<div class="bg-brand-card/90 rounded-3xl p-6 border border-white/10 flex flex-col justify-between glow-hover">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brand-purple/20 flex items-center justify-center text-brand-purple font-black text-sm">
+                    PS4
+                  </div>
+<div>
+<h3 class="font-heading font-black text-white text-lg">PlayStation 4</h3>
+<p class="text-[11px] text-zinc-400">Blockbusters &amp; Competitive</p>
+</div>
+</div>
+<span class="text-xs font-mono font-bold text-brand-purple">9 Titles</span>
+</div>
+<!-- List of Games from Original Data -->
+<div class="space-y-2">
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Elden Ring</span>
+<span class="text-[10px] uppercase font-bold text-brand-yellow bg-brand-yellow/10 px-2 py-0.5 rounded">GOTY Masterpiece</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Horizon Forbidden West</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Action RPG</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Marvel's Spider-Man</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Open World</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Red Dead Redemption 2</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Western Epic</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">The Last of Us Part II</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Story / Survival</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Resident Evil Village</span>
+<span class="text-[10px] uppercase font-bold text-brand-accentRed bg-brand-accentRed/10 px-2 py-0.5 rounded">Survival Horror</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Mortal Kombat 11</span>
+<span class="text-[10px] uppercase font-bold text-brand-lime bg-brand-lime/10 px-2 py-0.5 rounded">Fighting</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Injustice 2</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">DC Superhero</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-purple/40 transition-colors">
+<span class="text-xs font-semibold text-white">Jump Force</span>
+<span class="text-[10px] uppercase font-bold text-brand-magenta bg-brand-magenta/10 px-2 py-0.5 rounded">Anime Arena</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5 text-center">
+<span class="text-xs text-zinc-400">Crisp 1080p / 60FPS Experience</span>
+</div>
+</div>
+<!-- Category 3: Nostalgic & Retro Classics -->
+<div class="bg-brand-card/90 rounded-3xl p-6 border border-white/10 flex flex-col justify-between glow-hover">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brand-yellow/20 flex items-center justify-center text-brand-yellow font-black text-sm">
+<i class="fa-solid fa-shapes"></i>
+</div>
+<div>
+<h3 class="font-heading font-black text-white text-lg">Nostalgic &amp; Retro</h3>
+<p class="text-[11px] text-zinc-400">Timeless Fun &amp; Arcade Gold</p>
+</div>
+</div>
+<span class="text-xs font-mono font-bold text-brand-yellow">9 Titles</span>
+</div>
+<!-- List of Games from Original Data -->
+<div class="space-y-2">
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">God of War 1 &amp; 2</span>
+<span class="text-[10px] uppercase font-bold text-brand-yellow bg-brand-yellow/10 px-2 py-0.5 rounded">Greek Classic</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">GTA Vice City</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Childhood Favorite</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Need for Speed</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Street Racing</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Minecraft</span>
+<span class="text-[10px] uppercase font-bold text-brand-lime bg-brand-lime/10 px-2 py-0.5 rounded">Sandbox / Creative</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Counter Strike</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Tactical Shooter</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Getting Over It</span>
+<span class="text-[10px] uppercase font-bold text-brand-accentRed bg-brand-accentRed/10 px-2 py-0.5 rounded">Rage Challenge</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Geometry Dash</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Rhythm / Reflex</span>
+</div>
+<div class="p-2.5 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between hover:border-brand-yellow/40 transition-colors">
+<span class="text-xs font-semibold text-white">Granny</span>
+<span class="text-[10px] uppercase font-bold text-zinc-400 bg-white/5 px-2 py-0.5 rounded">Spooky Thriller</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5 text-center">
+<span class="text-xs text-zinc-400">Pure Nostalgia on Big Screen</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: GamesLibrarySection -->
+<!-- BEGIN: RulesAndAlertsSection -->
+<section class="py-20 md:py-28 bg-brand-dark/70 relative border-t border-b border-white/10" data-purpose="cafe-guidelines" id="rules">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-accentRed/15 border border-brand-accentRed/40 text-brand-accentRed text-xs font-bold uppercase tracking-wider mb-3">
+<i class="fa-solid fa-shield-halved"></i>
+<span>Fair Play &amp; House Guidelines</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white">Rules, Alerts &amp; Policies</h2>
+<p class="text-zinc-400 text-sm sm:text-base mt-2">
+            Please review these essential guidelines so everyone gets a smooth, uninterrupted gameplay session.
+          </p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Rules Card -->
+<div class="lg:col-span-1 bg-brand-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-2xl bg-brand-lime/10 text-brand-lime flex items-center justify-center text-lg">
+<i class="fa-solid fa-clipboard-check"></i>
+</div>
+<h3 class="font-heading font-black text-white text-xl">General Rules</h3>
+</div>
+<!-- Rules Points from Original Screenshots -->
+<ul class="space-y-3.5 text-xs sm:text-sm text-zinc-300">
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-check text-brand-lime mt-1 flex-shrink-0"></i>
+<span><strong>You must book your slot before arriving:</strong> Prior communication guarantees controller availability.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-check text-brand-lime mt-1 flex-shrink-0"></i>
+<span><strong>You need to inform us before you come:</strong> Call or text us to lock your setup.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-check text-brand-lime mt-1 flex-shrink-0"></i>
+<span>Contact us directly via WhatsApp, Instagram DM, our website booking, or quick phone call.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-circle-xmark text-brand-accentRed mt-1 flex-shrink-0"></i>
+<span>If you don't inform us in advance and there are no available slots, you won't be able to play.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-ban text-brand-accentRed mt-1 flex-shrink-0"></i>
+<span><strong>Alcohol and smoking</strong> are strictly prohibited inside the premises.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i class="fa-solid fa-burger text-brand-yellow mt-1 flex-shrink-0"></i>
+<span><strong>Outside food is not allowed</strong> to keep gaming setups clean &amp; hygienic.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5">
+<span class="text-[11px] text-zinc-400 uppercase tracking-wider font-semibold">Strictly Enforced for all guests</span>
+</div>
+</div>
+<!-- Alert & Note Card -->
+<div class="lg:col-span-1 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-yellow/30 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-brand-yellow/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-2xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center text-lg">
+<i class="fa-solid fa-triangle-exclamation"></i>
+</div>
+<h3 class="font-heading font-black text-white text-xl">Alert &amp; Electricity Note</h3>
+</div>
+<!-- Original Verbatim Note from Screenshots -->
+<div class="bg-black/50 p-4 rounded-2xl border border-white/5 mb-4">
+<p class="text-xs sm:text-sm text-zinc-300 leading-relaxed italic">
+                  "This is the beginning of our gaming cafe, so we haven't fixed the issue with electricity. If you encounter such a problem due to a system error or electricity issue, we will refund you according to the game time."
+                </p>
+</div>
+<div class="space-y-3 text-xs sm:text-sm text-zinc-400">
+<p class="flex items-center gap-2">
+<i class="fa-solid fa-bolt text-brand-yellow"></i>
+<span>Fair play guarantee: You never pay for lost power minutes.</span>
+</p>
+<p class="flex items-center gap-2">
+<i class="fa-solid fa-hand-holding-dollar text-brand-lime"></i>
+<span>Instant pro-rata time credit or refund.</span>
+</p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5">
+<span class="text-[11px] text-brand-yellow font-bold uppercase tracking-wider">Transparent &amp; Honest Cafe Policy</span>
+</div>
+</div>
+<!-- Damage Note Card -->
+<div class="lg:col-span-1 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-accentRed/30 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-brand-accentRed/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-2xl bg-brand-accentRed/10 text-brand-accentRed flex items-center justify-center text-lg">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+</div>
+<h3 class="font-heading font-black text-white text-xl">Damage &amp; Hardware Policy</h3>
+</div>
+<!-- Original Verbatim Note from Screenshots -->
+<div class="bg-black/50 p-4 rounded-2xl border border-brand-accentRed/20 mb-4">
+<p class="text-xs sm:text-sm text-zinc-200 leading-relaxed font-semibold">
+                  "If you damage any controller, monitor, or PS5 forcefully, then you have to pay breakage charge as per damage console."
+                </p>
+</div>
+<ul class="space-y-2.5 text-xs text-zinc-400">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-circle-exclamation text-brand-accentRed mt-0.5"></i>
+<span>No throwing, slamming, or abusive behavior with DualSense controllers during competitive matches.</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-circle-exclamation text-brand-accentRed mt-0.5"></i>
+<span>Steering wheel rig must be used as intended without violent wrenching.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-white/5">
+<span class="text-[11px] text-brand-accentRed font-bold uppercase tracking-wider">Equipment Breakage Charged at Actuals</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: RulesAndAlertsSection -->
+<!-- BEGIN: CustomerReviewsSection -->
+<section class="py-20 md:py-28 relative overflow-hidden" data-purpose="social-reviews" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-bold uppercase tracking-wider mb-3">
+<i class="fa-solid fa-star"></i>
+<span>Player Community</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white">LEVEL UP YOUR EXPERIENCE</h2>
+<p class="text-zinc-400 text-sm sm:text-base mt-2">
+            See what local gamers from Thane are saying about our setups, cozy environment, and steering rig.
+          </p>
+</div>
+<!-- Review Grid -->
+<div class="grid md:grid-cols-3 gap-6 mb-12">
+<div class="p-6 rounded-3xl bg-brand-card border border-white/10 flex flex-col justify-between">
+<div>
+<div class="flex text-brand-yellow text-sm gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                "The ₹50 steering wheel setup is insanely good! We played F1 22 and Snow Runner for hours. Super chilled spot in Yeoor Hills."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-white/5">
+<div class="w-8 h-8 rounded-full bg-brand-lime text-black font-bold flex items-center justify-center text-xs">
+                AK
+              </div>
+<div>
+<p class="text-xs font-bold text-white">Aryan K.</p>
+<p class="text-[10px] text-zinc-400">Regular F1 Racer</p>
+</div>
+</div>
+</div>
+<div class="p-6 rounded-3xl bg-brand-card border border-white/10 flex flex-col justify-between">
+<div>
+<div class="flex text-brand-yellow text-sm gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                "Prices are super student friendly (only ₹60 for 1 hr with 2 players). God of War Ragnarök runs buttery smooth. Definitely my squad's new weekend spot."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-white/5">
+<div class="w-8 h-8 rounded-full bg-brand-cyan text-black font-bold flex items-center justify-center text-xs">
+                RS
+              </div>
+<div>
+<p class="text-xs font-bold text-white">Rohan S.</p>
+<p class="text-[10px] text-zinc-400">PS5 Co-op Player</p>
+</div>
+</div>
+</div>
+<div class="p-6 rounded-3xl bg-brand-card border border-white/10 flex flex-col justify-between">
+<div>
+<div class="flex text-brand-yellow text-sm gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                "Great collection of nostalgic games like GTA Vice City and Need for Speed alongside latest PS5 titles. Friendly owners too!"
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-white/5">
+<div class="w-8 h-8 rounded-full bg-brand-purple text-white font-bold flex items-center justify-center text-xs">
+                ND
+              </div>
+<div>
+<p class="text-xs font-bold text-white">Nikhil D.</p>
+<p class="text-[10px] text-zinc-400">Nostalgia Gamer</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Original Review Trigger CTA -->
+<div class="text-center">
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full font-heading font-extrabold text-sm uppercase tracking-wider bg-brand-card hover:bg-brand-cardLight border border-brand-lime/40 text-brand-lime shadow-neon-green transition-all" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<i class="fa-solid fa-comment-dots text-lg"></i>
+<span>Check Reviews / Leave a Review (Click Here)</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+</a>
+</div>
+</div>
